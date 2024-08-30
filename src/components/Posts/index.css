@@ -1,0 +1,93 @@
+
+
+.delete-btn{
+
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #0b378a;
+    width: 100px;
+    height: 20px;
+
+}
+
+.update-btn{
+
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #0b378a;
+    width: 100px;
+    height: 20px;
+
+}
+
+
+.post-btn-and-want-to-see-your-posts-btn-container{
+    width: 375px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.want-to-see-your-posts-btn{
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #0b378a;
+    width: 210px;
+    height: 20px;
+
+}
+
+.create-new-post-btn{
+    cursor: pointer;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #0b378a;
+
+    height: 20px;
+}
+
+.posts-main-container{
+
+}
+
+.post-item-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    border-radius: 8px;
+    list-style-type: none;
+    height: 40px;
+    border-style: groove;
+    margin-top: 5px;
+}
+
+
+.text-area-for-writing-posts{
+    padding: 10px;
+    font-family: "Roboto";
+}
+
+.post-btn{
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #0b378a;
+    width: 75px;
+    height: 20px;
+}
+
+.posts-main-container{
+    padding: 10px;
+}
