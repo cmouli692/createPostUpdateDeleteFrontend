@@ -14,6 +14,7 @@ class Posts extends Component{
     }
 
     componentDidMount(){
+        console.log("component did mount")
         this.getPostsData()
     }
 
@@ -336,6 +337,7 @@ class Posts extends Component{
         return (
             <div className="posts-main-container">
                 <h1>{pageHeading}</h1>
+                {/* check you code from here */}
                 {/* {isLoading ? <p>Loading ...</p> : creatingPost ? this.createPostContainer() : this.displayPostsContainer()} */}
                 {creatingPost ? this.createPostContainer() : this.displayPostsContainer()}
                 
