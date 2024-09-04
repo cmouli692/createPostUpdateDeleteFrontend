@@ -330,7 +330,7 @@ class Posts extends Component{
 
 
     render(){
-        const {creatingPost} = this.state
+        const {creatingPost,isLoading} = this.state
 
         const pageHeading = creatingPost ? "CREATE A POST" : "YOUR POSTS"
 
@@ -339,7 +339,8 @@ class Posts extends Component{
                 <h1>{pageHeading}</h1>
                 {/* check you code from here */}
                 {/* {isLoading ? <p>Loading ...</p> : creatingPost ? this.createPostContainer() : this.displayPostsContainer()} */}
-                {creatingPost ? this.createPostContainer() : this.displayPostsContainer()}
+                {creatingPost ? this.createPostContainer() : isLoading ? <p>Loading ...</p> : this.displayPostsContainer()}
+                {/* {creatingPost ? this.createPostContainer() : this.displayPostsContainer()} */}
                 
      
             </div>
