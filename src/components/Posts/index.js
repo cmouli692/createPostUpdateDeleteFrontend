@@ -330,7 +330,7 @@ class Posts extends Component{
 
 
     render(){
-        const {creatingPost,isLoading} = this.state
+        const {creatingPost} = this.state
 
         const pageHeading = creatingPost ? "CREATE A POST" : "YOUR POSTS"
 
