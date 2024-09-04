@@ -99,7 +99,7 @@ class Posts extends Component{
 
         this.setState({post : ""})
 
-         this.getPostsData()
+        await this.getPostsData()
 
         //CHECK THIS IF IT IS NECESSARY OR REMOVE IT 
 
