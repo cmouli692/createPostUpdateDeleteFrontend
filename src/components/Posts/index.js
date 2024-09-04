@@ -192,7 +192,7 @@ class Posts extends Component{
     } 
 
     onClickUpdateBtn = (uniqueKey) => {
-        const {postsList} = this.state
+        // const {postsList} = this.state
 
        this.setState(prevState=> ({
             postsList : prevState.postsList.map((eachPost) => {
