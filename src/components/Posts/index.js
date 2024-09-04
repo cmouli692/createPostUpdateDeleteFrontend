@@ -5,7 +5,7 @@ import "./index.css"
 class Posts extends Component{
 
     state = {
-        creatingPost  : false,
+        creatingPost  : true,
         post : "" ,
         postsList : [],
         isLoading: false ,
@@ -122,6 +122,7 @@ class Posts extends Component{
 
     onClickWantToSeeYourPostsBtn = () =>{
         this.setState({creatingPost : false})
+        this.getPostsData()
     }
 
     createPostContainer = () =>
