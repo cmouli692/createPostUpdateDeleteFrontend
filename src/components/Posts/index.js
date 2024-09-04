@@ -336,7 +336,8 @@ class Posts extends Component{
         return (
             <div className="posts-main-container">
                 <h1>{pageHeading}</h1>
-                {isLoading ? <p>Loading ...</p> : creatingPost ? this.createPostContainer() : this.displayPostsContainer()}
+                {/* {isLoading ? <p>Loading ...</p> : creatingPost ? this.createPostContainer() : this.displayPostsContainer()} */}
+                {creatingPost ? this.createPostContainer() : this.displayPostsContainer()}
                 
      
             </div>
