@@ -5,7 +5,7 @@ import "./index.css"
 class Posts extends Component{
 
     state = {
-        creatingPost  : true,
+        creatingPost  : false,
         post : "" ,
         postsList : [],
         isLoading: false ,
@@ -59,7 +59,7 @@ class Posts extends Component{
 
     //    this.setState((prevState) => ({postListForManagingState : [ ...prevState.postListForManagingState,...fetchedPostsListWithIsUpdateClickKey]}))
 
-       this.setState({postsList : updatedFetchedPostsList})
+       await this.setState({postsList : updatedFetchedPostsList})
 
     //    this.setState({postsList : fetchedPostsList})
 
@@ -84,10 +84,6 @@ class Posts extends Component{
 
         console.log(postObject)
 
-        
-
-        
-
         const options = {
             method : "POST",
             headers : {
@@ -103,7 +99,7 @@ class Posts extends Component{
 
         this.setState({post : ""})
 
-        this.getPostsData()
+         this.getPostsData()
 
         //CHECK THIS IF IT IS NECESSARY OR REMOVE IT 
 
@@ -128,18 +124,24 @@ class Posts extends Component{
     }
 
     createPostContainer = () =>
-    <form onSubmit={this.onSubmitPostForm}>
+    <div>
+
         
-        <label htmlFor="post">Your Post :</label>
-        <br/>
-        <textarea onChange={this.onChangePostText} className="text-area-for-writing-posts" id = "post" rows="10" cols="50" style={{resize : "none"}} placeholder="Write your blog"></textarea>
-        <br/>
-        <div className="post-btn-and-want-to-see-your-posts-btn-container">
-            <button className="post-btn" type="submit">Post</button>
-            <button className="want-to-see-your-posts-btn" onClick={this.onClickWantToSeeYourPostsBtn}>WANT TO SEE YOUR POSTS</button>
-        </div>
-        
-    </form>
+        <form onSubmit={this.onSubmitPostForm}>
+            
+            <label htmlFor="post">Your Post :</label>
+            <br/>
+            <textarea onChange={this.onChangePostText} className="text-area-for-writing-posts" id = "post" rows="10" cols="50" style={{resize : "none"}} placeholder="Write your blog"></textarea>
+            <br/>
+            <div className="post-btn-and-want-to-see-your-posts-btn-container">
+                <button className="post-btn" type="submit">Post</button>
+                <button className="want-to-see-your-posts-btn" onClick={this.onClickWantToSeeYourPostsBtn}>WANT TO SEE YOUR POSTS</button>
+                
+            </div>
+            
+            
+        </form>
+    </div>
 
 
     onClickCreateNewPost = () =>{
