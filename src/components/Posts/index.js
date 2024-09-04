@@ -5,7 +5,7 @@ import "./index.css"
 class Posts extends Component{
 
     state = {
-        creatingPost  : true,
+        creatingPost  : false,
         post : "" ,
         postsList : [],
         isLoading: false ,
@@ -59,7 +59,7 @@ class Posts extends Component{
 
     //    this.setState((prevState) => ({postListForManagingState : [ ...prevState.postListForManagingState,...fetchedPostsListWithIsUpdateClickKey]}))
 
-       await this.setState({postsList : updatedFetchedPostsList})
+       this.setState({postsList : updatedFetchedPostsList})
 
     //    this.setState({postsList : fetchedPostsList})
 
@@ -99,7 +99,8 @@ class Posts extends Component{
 
         this.setState({post : ""})
 
-        await this.getPostsData()
+        // await this.getPostsData()
+        this.getPostsData()
 
         //CHECK THIS IF IT IS NECESSARY OR REMOVE IT 
 
