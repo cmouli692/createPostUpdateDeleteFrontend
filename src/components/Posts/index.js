@@ -93,7 +93,7 @@ class Posts extends Component{
         }
 
     //    const url = "http://localhost:3001/"
-        const url = "https://postupdatedeletebackend.onrender.com"
+        const url = "https://postupdatedeletebackend.onrender.com/"
 
         fetch(url,options)
 
@@ -260,7 +260,7 @@ class Posts extends Component{
 
         // const url = "http://localhost:3001/"
 
-        const url = "https://postupdatedeletebackend.onrender.com"
+        const url = "https://postupdatedeletebackend.onrender.com/"
 
         const updatePostObject  = {
             uniqueKey,
