@@ -13,10 +13,10 @@ class Posts extends Component{
         // postListForManagingState :[]
     }
 
-    // componentDidMount(){
-    //     console.log("component did mount")            // removed component did mount CHECK IT ONCE
-    //     this.getPostsData()
-    // }
+    componentDidMount(){
+        console.log("component did mount")            // removed component did mount CHECK IT ONCE
+        this.getPostsData()
+    }
 
     getPostsData = async() => {
        this.setState({isLoading : true,creatingPost:false})               // did is loading false CHECK IT ONCE
