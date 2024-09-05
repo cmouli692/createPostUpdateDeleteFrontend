@@ -13,14 +13,15 @@ class Posts extends Component{
         // postListForManagingState :[]
     }
 
-    componentDidMount(){
-        console.log("component did mount")
-        this.getPostsData()
-    }
+    // componentDidMount(){
+    //     console.log("component did mount")            // removed component did mount CHECK IT ONCE
+    //     this.getPostsData()
+    // }
 
     getPostsData = async() => {
-       this.setState({isLoading : true})
+    //    this.setState({isLoading : false})               // did is loading false CHECK IT ONCE
     //    const url = "http://localhost:3001/"
+
        const url = "https://postupdatedeletebackend.onrender.com"
        const response = await fetch(url)
 
@@ -109,7 +110,7 @@ class Posts extends Component{
         //     postListForManagingState : [...prevState.postListForManagingState,postObject]
         // }))
 
-        this.setState({isLoading:false})
+        // this.setState({isLoading:false})         CHECK IT ONCE 
     
 
 
