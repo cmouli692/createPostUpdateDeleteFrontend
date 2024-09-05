@@ -71,7 +71,7 @@ class Posts extends Component{
 
     //    this.setState({postsList : fetchedPostsList})
 
-       this.setState({isLoading : false})
+       this.setState({isLoading : false})  // comment out this next time
 
     }
 
@@ -116,7 +116,7 @@ class Posts extends Component{
         //     postListForManagingState : [...prevState.postListForManagingState,postObject]
         // }))
 
-        // this.setState({isLoading:false})         CHECK IT ONCE 
+        this.setState({isLoading:false})         //CHECK IT ONCE 
     
 
 
