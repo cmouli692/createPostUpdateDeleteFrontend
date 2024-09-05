@@ -25,7 +25,9 @@ class Posts extends Component{
        const url = "https://postupdatedeletebackend.onrender.com"
        const options = {
         method : "GET",
-        headers : "application/json",
+        headers : {
+            "Content-Type": "application/json"
+        },
        }
        const response = await fetch(url,options)
 
