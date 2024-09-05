@@ -23,7 +23,11 @@ class Posts extends Component{
     //    const url = "http://localhost:3001/"
 
        const url = "https://postupdatedeletebackend.onrender.com"
-       const response = await fetch(url)
+       const options = {
+        method : "GET",
+        headers : "application/json",
+       }
+       const response = await fetch(url,options)
 
        const fetchedPostsList = await response.json()
 
