@@ -19,7 +19,7 @@ class Posts extends Component{
     // }
 
     getPostsData = async() => {
-    //    this.setState({isLoading : false})               // did is loading false CHECK IT ONCE
+       this.setState({isLoading : true,creatingPost:false})               // did is loading false CHECK IT ONCE
     //    const url = "http://localhost:3001/"
 
        const url = "https://postupdatedeletebackend.onrender.com"
